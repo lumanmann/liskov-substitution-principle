@@ -25,6 +25,10 @@ class ImageTextField: CustomTextField {
         return iv
     }()
     
+    override func didEdited() {
+       // super.didEdited()
+        inputTF.textColor = .orange
+    }
     
     override func setupSubviews() {
         addSubview(inputTF)
